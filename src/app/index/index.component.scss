@@ -1,0 +1,107 @@
+@import '../../styles.scss';
+
+.banner {
+    text-align: left;
+    
+}
+
+.banner-container {
+    background-color: $soft-dark;
+    background-image: url(../../assets/imgs/lock-full.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+
+.banner-grid-container {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.banner-contact {
+    font-size: 24px;
+    color: lightgray;
+}
+
+.hook-title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 3em;
+    font-family: AtlasGroteskWeb,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width: 500px;
+    color: white;
+    margin: 0 !important;
+}
+
+.loud-btn {
+    height: 58px;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-us-btn {
+    background-color: transparent;
+    border: solid white 2px;
+    color: white;
+}
+
+.info-card {
+    box-shadow: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+.info-card > .mat-card-content > p {
+    text-align: left;
+    margin-left: 56px;
+    color: darkslategrey;
+}
+
+.info-card > .mat-card-header > div > mat-icon {
+    height: 40px !important;
+    width: 40px !important;
+    font-size: 28px !important;
+    color: $warn-color;
+}
+
+.info-card > .mat-card-header {
+    text-align: left !important;
+}
+
+.info-title {
+    font-weight: 200;
+}
+
+.tile-title {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.tile-text {
+    font-size: 18px;
+    color: grey;
+}
+
+.tile-cta {
+    height: 50px;
+    font-size: 16px;
+    border-radius: 0 !important;
+}
+
+.contact-form-btn {
+    margin-top: 35px;
+    height: 50px;
+    font-size: 18px;
+    width: 200px;
+}
+
+.testimonial-text {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.testimonial-name {
+    font-weight: 100;
+}
