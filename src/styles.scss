@@ -329,3 +329,8 @@ $portfolio-theme: mat-light-theme($portfolio-primary, $portfolio-accent, $portfo
   margin-top: 80px;
   background-color: $soft-dark;
 }
+
+.bg-frosted {
+  background-color: #FFFFFF88;;
+  backdrop-filter: blur(5px);
+}
