@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
+@import "assets/scss/layout";
 @import '~@angular/material/theming';
 @include mat-core();
 
@@ -10,7 +10,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 $soft-dark: #212121;
 $med-dark: rgb(20, 20, 20);
 
-$primary-color: #212439;
+$primary-color: #cc333f;
 $primary-txt-color: #F7F7F7;
 
 $accent-color: #EDC951;
@@ -246,15 +246,86 @@ $portfolio-theme: mat-light-theme($portfolio-primary, $portfolio-accent, $portfo
     text-align: auto;
     overflow: visible;
   }
-  
-  .container {
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-  }
 
   .full-width {
     width: 100%;
+}
+
+.banner {
+  text-align: left;
+
+}
+
+.inner-banner-container {
+  position: absolute;
+  max-width: 1300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  bottom: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw - 100px);
+}
+
+.banner-container {
+  background-color: $primary-color;
+  //background-color: $soft-dark;
+  //background-image: url(../../assets/imgs/lock-full.jpg);
+  //background-size: cover;
+  //background-attachment: fixed;
+  //background-position-y: center;
+}
+
+.banner-grid-container {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.banner-contact {
+  font-size: 24px;
+  color: lightgray;
+}
+
+
+
+.loud-btn {
+  height: 58px;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.info-card {
+  box-shadow: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+.info-card > .mat-card-content > p {
+  text-align: left;
+  margin-left: 56px;
+  color: darkslategrey;
+}
+
+.info-card > .mat-card-header > div > mat-icon {
+  height: 40px !important;
+  width: 40px !important;
+  font-size: 28px !important;
+  color: $warn-color;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 80px;
+  background-color: $soft-dark;
 }
