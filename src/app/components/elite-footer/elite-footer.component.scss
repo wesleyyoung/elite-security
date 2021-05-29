@@ -48,6 +48,12 @@
     text-align: center;
   }
 
+  @media (max-width: 885px) {
+    > div {
+      align-self: center !important;
+    }
+  }
+
   @media (min-width: 885px) {
     margin-top: 0;
   }

@@ -1,0 +1,15 @@
+<mat-card [ngClass]="klass">
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon aria-hidden="false" [attr.aria-label]="icon">
+        {{icon}}
+      </mat-icon>
+    </div>
+    <mat-card-title>{{title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{body}}
+    </p>
+  </mat-card-content>
+</mat-card>

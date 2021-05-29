@@ -42,12 +42,16 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { EliteFooterComponent } from './components/elite-footer/elite-footer.component';
+import { EliteToolbarComponent } from './components/elite-toolbar/elite-toolbar.component';
+import { IconCardComponent } from './components/icon-card/icon-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    EliteFooterComponent
+    EliteFooterComponent,
+    EliteToolbarComponent,
+    IconCardComponent
   ],
   imports: [
     BrowserModule,

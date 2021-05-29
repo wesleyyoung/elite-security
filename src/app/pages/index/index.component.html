@@ -31,55 +31,30 @@
     <div class="content white-bg">
       <mat-grid-list cols="12" rowHeight="100px" style="overflow-x: visible" gutterSize="0">
         <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
-          <mat-card class="info-card">
-            <mat-card-header>
-              <div mat-card-avatar>
-                <mat-icon aria-hidden="false" aria-label="tv">tv</mat-icon>
-              </div>
-              <mat-card-title>Automation Friendly</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Do you own a Control4, Crestron, or any other smart home system? Elite has been working
-                with
-                home automation dealers for decades and can integrate with almost any system
-              </p>
-            </mat-card-content>
-          </mat-card>
+          <app-icon-card
+            klass="info-card"
+            [icon]="'tv'"
+            [title]="'Automation Friendly'"
+            [body]="'Do you own a Control4, Crestron, or any other smart home system? Elite has been working\n'+
+'                with\n'+
+'                home automation dealers for decades and can integrate with almost any system'">
+          </app-icon-card>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
-          <mat-card class="info-card">
-            <mat-card-header>
-              <div mat-card-avatar>
-                <mat-icon aria-hidden="false" aria-label="house">house</mat-icon>
-              </div>
-              <mat-card-title>No Compromises</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                High-end commercial and residential is our specialty, we'll work with you and your
-                designer
-                to make sure our system won't be an eye sore
-              </p>
-            </mat-card-content>
-          </mat-card>
+          <app-icon-card
+            klass="info-card"
+            [icon]="'house'"
+            [title]="'No Compromises'"
+            [body]="'High-end commercial and residential is our specialty, we\'ll work with you and your designer to make sure our system won\'t be an eye sore'">
+          </app-icon-card>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
-          <mat-card class="info-card">
-            <mat-card-header>
-              <div mat-card-avatar>
-                <mat-icon aria-hidden="false" aria-label="security">security</mat-icon>
-              </div>
-              <mat-card-title>Always Watching</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Our 24/7 active monitoring service is instantly alerted to a break-in or fire and will
-                notify
-                authorities within seconds
-              </p>
-            </mat-card-content>
-          </mat-card>
+          <app-icon-card
+            klass="info-card"
+            [icon]="'security'"
+            [title]="'Always Watching'"
+            [body]="'Our 24/7 active monitoring service is instantly alerted to a break-in or fire and will notify authorities within seconds'">
+          </app-icon-card>
         </mat-grid-tile>
       </mat-grid-list>
     </div>
@@ -213,7 +188,7 @@
               </div>
 
               <div class="col-md-12 col-sm-12 mb-2">
-                <mat-form-field class="full-width">
+                <mat-form-field class="full-width" appearance='outline'>
                   <textarea matInput placeholder="Message"></textarea>
                 </mat-form-field>
               </div>
