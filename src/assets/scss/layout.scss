@@ -1,3 +1,39 @@
+.d-flex {
+  display: flex;
+}
+
+.d-inline-grid {
+  display: inline-grid;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
 .font-size-22 {
   font-size: 22px !important;
 }

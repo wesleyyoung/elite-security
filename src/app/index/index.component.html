@@ -1,22 +1,22 @@
 <div>
   <div class="banner-container">
-    <div class="" style="height: 750px; position: relative;">
-      <div class="inner-banner-container">
-        <h1 class="white hook-title mat-display-3 mb-3">
-          Providing our community with peace of mind for over 20 years
-        </h1>
-        <br>
-        <!--          <p class="banner-contact">-->
-        <!--            435.656.0685-->
-        <!--          </p>-->
-        <button mat-raised-button color="accent" class="loud-btn mx-1">
-          GET A FREE QUOTE
-        </button>
-        <button mat-raised-button class="loud-btn contact-us-btn mx-1">CONTACT US</button>
+    <div class="inner-banner-container">
+      <div class="h-100 d-flex">
+        <div class="container d-inline-block align-self-flex-end pb-5 mb-3 px-4">
+          <h1 class="white hook-title mat-display-3 mb-3">
+            Providing our community with peace of mind for over 20 years
+          </h1>
+          <br>
+          <button mat-raised-button color="accent" class="loud-btn mx-1 my-1">
+            GET A FREE QUOTE
+          </button>
+          <button mat-raised-button class="loud-btn contact-us-btn mx-1 my-1">CONTACT US</button>
+        </div>
       </div>
+
     </div>
   </div>
-  <div class="container" style="margin-top: 6rem; margin-bottom: 2em">
+  <div class="container mt-5 mb-2">
     <div class="content white-bg">
       <mat-grid-list cols="12" rowHeight="100px" style="overflow-x: visible" gutterSize="0">
         <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
@@ -130,6 +130,7 @@
           technology available.
         </p>
       </mat-card-title>
+<!--      <span class="py-5 my-5"></span>-->
       <mat-divider class="py-5 my-5"></mat-divider>
       <mat-card-content>
 
@@ -141,13 +142,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-8">
+              <div class="col-md-8 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="Name">
                 </mat-form-field>
               </div>
 
-              <div class="col-4">
+              <div class="col-md-4 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <mat-label>Subject</mat-label>
                   <select matNativeControl>
@@ -164,43 +165,43 @@
                 </mat-form-field>
               </div>
 
-              <div class="col-12">
+              <div class="col-md-12 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="Address">
                 </mat-form-field>
               </div>
 
-              <div class="col-4">
+              <div class="col-md-4 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="City">
                 </mat-form-field>
               </div>
 
-              <div class="col-4">
+              <div class="col-md-4 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="State">
                 </mat-form-field>
               </div>
 
-              <div class="col-4">
+              <div class="col-md-4 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput #postalCode maxlength="5" placeholder="Zip Code">
                 </mat-form-field>
               </div>
 
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="Phone">
                 </mat-form-field>
               </div>
 
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <input matInput placeholder="Email">
                 </mat-form-field>
               </div>
 
-              <div class="col-12">
+              <div class="col-md-12 col-sm-12 mb-2">
                 <mat-form-field class="full-width">
                   <textarea matInput placeholder="Message"></textarea>
                 </mat-form-field>
