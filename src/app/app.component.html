@@ -1,4 +1,4 @@
-<div>
+<div fxLayout="column" fxFlexFill>
   <mat-toolbar color="primary" class="navbar">
     <span>ELITE</span>
     <span style="flex: 1 1 auto;"></span>
@@ -12,5 +12,8 @@
       GALLERY
     </button>
   </mat-toolbar>
-  <router-outlet></router-outlet>
+  <div fxFlex>
+    <router-outlet></router-outlet>
+  </div>
+  <app-elite-footer></app-elite-footer>
 </div>
